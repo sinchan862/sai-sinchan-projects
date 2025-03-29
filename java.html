@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+<h1 align ="center">Arithmetic Operations</h1>
+<table border="5" align="center" cellspacing="10" cellpadding="10">
+<tr>
+<th>Enter Number1:</th>
+<td><input type="text" name="num1" id="num1"></td>
+</tr>
+<tr>
+<th>Enter Number2:</th>
+<td><input type="text" name="num2" id="num2"></td>
+</tr>
+<tr>
+<th>Answer:</th>
+<td><input type="text" name="ans" id="ans"></td>
+</tr>
+<tr>
+<th colspan="2" align="center">
+<input type="button" onclick="add()" value="+" style="height:50px;
+width:50px">
+<input type="button" onclick="sub()" value="-" style="height:50px;
+
+width:50px">
+<input type="button" onclick="div()" value="/" style="height:50px;
+width:50px">
+<input type="button" onclick="mul()" value="*" style="height:50px;width:50px">
+<input type="button" onclick="mod()" value="%" style="height:50px;
+width:50px">
+</th>
+</tr>
+</form>
+<script>
+function add()
+{
+var a=parseInt(document.getElementById("num1").value);
+var b=parseInt(document.getElementById("num2").value);
+var c=a+b;
+document.getElementById("ans").value=c;
+}
+function sub()
+{
+var a=parseInt(document.getElementById("num1").value);
+var b=parseInt(document.getElementById("num2").value);
+var c=a-b;
+document.getElementById("ans").value=c;
+}
+function div()
+{
+var a=parseInt(document.getElementById("num1").value);
+var b=parseInt(document.getElementById("num2").value);
+var c=a/b;
+document.getElementById("ans").value=c;
+}
+function mul()
+{
+var a=parseInt(document.getElementById("num1").value);
+var b=parseInt(document.getElementById("num2").value);
+var c=a*b;
+document.getElementById("ans").value=c;
+}
+
+function mod()
+{
+var a=parseInt(document.getElementById("num1").value);
+var b=parseInt(document.getElementById("num2").value);
+var c=a%b;
+document.getElementById("ans").value=c;
+}
+</script>
+</body>
+</html>
